@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="weui.css">	
+</head>
+
+
+<body ontouchstart>
+
+
+	<!-- weui-badge 徽章
+		 weui-flex 一行 1.下面有几个weui-flex__item均分几分 2.几个div 一个weui-flex__item 它占其余部分
+		 需要自己调下间距
+		 weui-footer  weui-footer__links链接 weui-footer__text文字
+	-->
+
+	<span class="weui-badge weui-badge_dot" style="margin:0 10px; "></span>
+
+	<div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                <img src="http://bpic.588ku.com/element_origin_min_pic/20/16/02/2456cd34272a279.jpg" style="width: 50px;display: block">
+                <span class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</span>
+            </div>
+            <div class="weui-cell__bd">
+                <p>联系人名称</p>
+                <p style="font-size: 13px;color: #888888;">摘要信息</p>
+            </div>
+        </div>
+        <div class="weui-cell weui-cell_access">
+            <div class="weui-cell__bd">
+                <span style="vertical-align: middle">单行列表</span>
+                <span class="weui-badge" style="margin-left: 5px;">8</span>
+            </div>
+            <div class="weui-cell__ft"></div>
+        </div>
+        <div class="weui-cell weui-cell_access">
+            <div class="weui-cell__bd">
+                <span style="vertical-align: middle">单行列表</span>
+                <span class="weui-badge" style="margin-left: 5px;">8</span>
+            </div>
+            <div class="weui-cell__ft">详细信息</div>
+        </div>
+        <div class="weui-cell weui-cell_access">
+            <div class="weui-cell__bd">
+                <span style="vertical-align: middle">单行列表</span>
+                <span class="weui-badge" style="margin-left: 5px;">New</span>
+            </div>
+            <div class="weui-cell__ft"></div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="weui-footer">
+        <p class="weui-footer__links">
+            <a href="javascript:void(0);" class="weui-footer__link">底部链接</a>
+            <a href="javascript:void(0);" class="weui-footer__link">底部链接</a>
+        </p>
+        <p class="weui-footer__text">Copyright © 2008-2016 weui.io</p>
+    </div>
+    
+</body>
+</html>

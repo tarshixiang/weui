@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="weui.css">	
+</head>
+<body >
+
+<!--
+        radio  
+            (weui-cells weui-cells_radio) 多层
+            (weui-cell weui-check__label) label层
+            (weui-cell__bd)左侧文字 
+            (weui-cell_link) 添加-->
+	<div class="weui-cells weui-cells_radio">
+        <label class="weui-cell weui-check__label" for="x11">
+            <div class="weui-cell__bd">
+                <p>cell standard</p>
+            </div>
+            <div class="weui-cell__ft">
+                <input type="radio" class="weui-check" name="radio1" id="x11">
+                <span class="weui-icon-checked"></span>
+            </div>
+        </label>
+        <a href="javascript:void(0);" class="weui-cell weui-cell_link">
+            <div class="weui-cell__bd">添加更多</div>
+        </a>
+    </div>	
+<!-- checkbox -->
+    <div class="weui-cells weui-cells_checkbox">
+        <label class="weui-cell weui-check__label" for="s11">
+            <div class="weui-cell__hd">
+                <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+                <i class="weui-icon-checked"></i>
+            </div>
+            <div class="weui-cell__bd">
+                <p>standard is dealt for u.</p>
+            </div>
+        </label>
+        <a href="javascript:void(0);" class="weui-cell weui-cell_link">
+            <div class="weui-cell__bd">添加更多</div>
+        </a>
+    </div>
+
+<!-- form 
+    weui-cells__title 标题
+    weui-cell_vcode 验证码，调整格式weui-vcode-btn,weui-vcode-img
+    weui-cell 一行，
+    Cell 由 thumbnail weui_cell_hd、
+    body weui_cell_bd、
+    accessory weui_cell_ft 三部分组成，
+    cell 采用自适应布局，在需要自适应的部分加上 class weui_cell_primary即可
+-->
+    <div class="weui-cells weui-cells_form">
+        <div class="weui-cell weui-cell_vcode">
+            <img class="thumbnail weui-vcode-img" src="http://bpic.588ku.com/element_origin_min_pic/20/16/02/2456cd34272a279.jpg">
+            <div class="weui-cell__hd">
+                <label class="weui-label">qq</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入qq号">
+            </div>
+        </div>
+        <div class="weui-cell weui-cell_vcode">
+            <div class="weui-cell__hd">
+                <label class="weui-label">手机号</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="tel" placeholder="请输入手机号">
+            </div>
+            <div class="weui-cell__ft">
+                <button class="weui-vcode-btn">获取验证码</button>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label for="" class="weui-label">日期</label></div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="date" value="">
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label for="" class="weui-label">时间</label></div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="datetime-local" value="" placeholder="">
+            </div>
+        </div>
+        <div class="weui-cell weui-cell_vcode">
+            <div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="number" placeholder="请输入验证码">
+            </div>
+            <div class="weui-cell__ft">
+                <img class="weui-vcode-img" src="http://bpic.588ku.com/element_origin_min_pic/20/16/02/2456cd34272a279.jpg">
+            </div>
+        </div>
+    </div>
+
+
+<!-- weui-warn 
+        weui-cell_warn 表单警告
+        pattern 正则限制
+-->
+    <div class="weui-cell weui-cell_warn">
+        <div class="weui-cell__hd"><label for="" class="weui-label">卡号</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="number" pattern="[0-9]*" value="weui input error" placeholder="请输入卡号">
+        </div>
+        <div class="weui-cell__ft">
+            <i class="weui-icon-warn"></i>
+        </div>
+    </div>
+
+
+<!-- weui-switch -->
+    <div class="weui-cell weui-cell_switch">
+        <div class="weui-cell__bd">标题文字</div>
+        <div class="weui-cell__ft">
+            <input class="weui-switch" type="checkbox" checked="checked">
+        </div>
+    </div>
+<!-- weui-input 
+    weui-textarea rows=3 
+
+-->
+    <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+                <div class="weui-textarea-counter"><span>0</span>/200</div>
+            </div>
+        </div>
+    </div>
+
+<!-- weui-select -->
+    <div class="weui-cell weui-cell_select weui-cell_select-before">
+        <div class="weui-cell__hd">
+            <select class="weui-select" name="select2">
+                <option value="1">+86</option>
+                <option value="2">+80</option>
+                <option value="3">+84</option>
+                <option value="4">+87</option>
+            </select>
+        </div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入号码">
+        </div>
+    </div>
+
+
+
+
+<!-- weui-agree 
+    同意条款
+-->
+    <label for="weuiAgree" class="weui-agree">
+        <input id="weuiAgree" type="checkbox" class="weui-agree__checkbox">
+        <span class="weui-agree__text">
+            阅读并同意<a href="javascript:void(0);">《相关条款》</a>
+        </span>
+    </label>
+
+
+
+<!-- 带图标，说明，链接的列表 
+    before,after
+-->
+
+<div class="weui-cells">
+
+    <a class="weui-cell weui-cell_access" href="javascript:;">
+        <div class="weui-cell__hd"><img src="http://bpic.588ku.com/element_origin_min_pic/20/16/02/2456cd34272a279.jpg" alt="" style="width:20px;margin-right:5px;display:block"></div>
+        <div class="weui-cell__bd">
+            <p>cell standard</p>
+        </div>
+        <div class="weui-cell__ft">说明文字</div>
+    </a>
+    <a class="weui-cell weui-cell_access" href="javascript:;">
+        <div class="weui-cell__hd"><img src="http://bpic.588ku.com/element_origin_min_pic/20/16/02/2456cd34272a279.jpg" alt="" style="width:20px;margin-right:5px;display:block"></div>
+        <div class="weui-cell__bd">
+            <p>cell standard</p>
+        </div>
+        <div class="weui-cell__ft">说明文字</div>
+    </a>
+</div>
+
+
+<!-- slider -->
+<div class="weui-slider-box">
+    <div class="weui-slider">
+        <div id="sliderInner" class="weui-slider__inner">
+            <div id="sliderTrack" style="width: 28%;" class="weui-slider__track"></div>
+            <div id="sliderHandler" style="left: 28%;" class="weui-slider__handler"></div>
+        </div>
+    </div>
+    <div id="sliderValue" class="weui-slider-box__value">28</div>
+</div>
+
+
+</body>
+</html>
+
+<script>
+//     表单（按钮，输入框，列表，滑块，上传组件）
+    button class 
+        (weui-btn weui-btn_primary) 绿色
+        (weui-btn weui-btn_disable) 禁用 暗色
+        (weui-btn weui-btn_default) 镂空 
+        (weui-btn weui-btn_warn) 红色
+        (weui-btn weui-btn_plain-default) 灰色
+        button-sp-area,限制宽度60%
+        weui-btn_mini 小按钮13px
+        weui-btn-area 一般做确定
+
+        weui-cell_access a链接改变样式
+    
+
+
+
+</script>

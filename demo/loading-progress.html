@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="weui.css">	
+</head>
+<body>
+<!-- weui-loadmore 65%宽 
+	weui-loadmore_dot 点点
+	weui-loadmore__tips显示数据
+-->
+	<div class="weui-loadmore">
+        <i class="weui-loading"></i>
+        <span class="weui-loadmore__tips">正在加载</span>
+    </div>
+    <div class="weui-loadmore weui-loadmore_line">
+        <span class="weui-loadmore__tips">暂无数据</span>
+    </div>
+    <div class="weui-loadmore weui-loadmore_line weui-loadmore_dot">
+        <span class="weui-loadmore__tips"></span>
+    </div>
+
+<!-- progress 改变 weui-progress__inner-bar 的宽-->
+    <div class="weui-progress">
+        <div class="weui-progress__bar">
+            <div class="weui-progress__inner-bar js_progress" style="width: 50%;"></div>
+        </div>
+        <a href="javascript:;" class="weui-progress__opr">
+            <i class="weui-icon-cancel"></i>
+        </a>
+    </div>
+</body>
+</html>
